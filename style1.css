@@ -1,0 +1,80 @@
+   .smartphone {
+            overflow-y: scroll;
+            position: sticky;
+            width: 360px;
+            height: 640px;
+            margin: auto;
+            border: 16px black solid;
+            border-top-width: 60px;
+            border-bottom-width: 60px;
+            border-radius: 36px;
+        }
+
+        
+        .smartphone:before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 5px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 10px;
+        }
+
+       
+        .smartphone:after {
+            content: '';
+            display: block;
+            width: 35px;
+            height: 35px;
+            position: fixed;
+            left: 50%;
+            bottom: -65px;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 50%;
+        }
+
+       
+        .smartphone .content {
+            width: 360px;
+            height: 640px;
+            background: rgb(140, 206, 236);
+        }
+
+
+* {
+  box-sizing: border-box;
+}
+
+dl > div {
+  background: rgb(104, 135, 138);
+  padding: 24px 0 0 0;
+}
+
+dt {
+  background: #5f85a1;
+  border-bottom: 1px solid #729ac2;
+  border-top: 1px solid #717D85;
+  color: #FFF;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: relative;
+  position: relative;
+  top: -1px;
+}
+
+dd {
+  font: bold 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid rgb(173, 98, 98);
+}
